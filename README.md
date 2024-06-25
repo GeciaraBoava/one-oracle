@@ -1,5 +1,5 @@
 # Curso One Oracle Next Education
-By Oracle e Alura
+By Oracle & Alura
 
 Projetos e desafios da segunda etapa do curso One Oracle Next Education.
 Nesta etapa foram aplicados conteúdos de lógica de programação, HTML, CSS e Figma, além da utilização da AI (ChatGPT) para otimização do desenvolvimento.
