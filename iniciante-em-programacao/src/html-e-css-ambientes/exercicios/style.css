@@ -1,0 +1,34 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(228, 228, 228);
+    color: rgb(6, 6, 55);
+    h1 {
+        color: rgb(166, 23, 114);
+    }
+    h2 {
+        color: rgb(166, 23, 114);
+    }
+    p {
+        color: rgb(13, 54, 99);;
+    }
+    a {
+        color: cadetblue;
+        
+    }
+    footer {
+        p {
+        color: cadetblue;
+        text-align: center;
+        }
+    }
+}
+.frase-destaque {
+    font-style: italic;
+    color: rgb(37, 97, 186);
+}
+
