@@ -11,7 +11,6 @@
 }
 
 * { 
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -77,7 +76,6 @@ strong {
     width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 .titulo-destaque {
@@ -104,7 +102,7 @@ strong {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 24px;
+    gap: 10px;
 }
 
 .apresentacao__links__navegacao {
@@ -113,7 +111,7 @@ strong {
     align-items: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 50%;
+    width: 80%;
     text-align: center;
     border-radius: 8px;
     font-size: 0.75rem;
@@ -157,7 +155,7 @@ strong {
         flex-direction: column;
     }
 
-    .apresentacao__about {
+    .about {
         padding: 0% 6% 6% 6%;
         flex-direction: column-reverse;
     }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <section class="campotexto">
+            <div class="campotexto__entrada">
+                <img class="campotexto__entrada__cabecalho" src="./assets/logo.png" alt="logo da empresa">
+                <textarea type="text" id="entradaTexto" name="entrada" placeholder="Digite teu texto aqui."></textarea>
+                <a class="campotexto__entrada__aviso" >
+                    <img src="./assets/exclamacao.png" alt="Exclamação" width="30px">
+                    Apenas letras minúsculas e sem acento.
+                </a>
+                <div class="campotexto__opcoes__entrada">
+                    <button onclick="criptografar()" class="botaoCriptografar">Criptografar</button>
+                    <button onclick="descriptografar()" class="botaoDescriptografar">Descriptografar</button>
+                </div>
+            </div>
+            <div class="camposaida">
+                <div id="saidaOrientacoes">
+                    <p class="saidaOrientacoes__textoPrincipal">Nenhuma mensagem encontrada</p>
+                    <p class="saidaOrientacoes__textoSecundario">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <img id="saidaImagem" src="./assets/2.png">
+                </div>
+                <div id="saidaResultado" style="display: none;">
+                    <p id="saidaTexto"></p>
+                    <button onclick="copiar()" class="botaoCopiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Elaborado por Geciara Boava</p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

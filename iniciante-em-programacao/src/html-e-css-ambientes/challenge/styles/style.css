@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet');
+
+:root {
+    --cor-primaria: #00215E;
+    --cor-secundaria: #dbdbdb;
+    --cor-terciaria: #aacef6;
+
+    --fonte-primaria: "Inter", sans-serif;
+
+    --altura-rodape: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-primaria);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.campotexto {
+    padding: 2% 10% 2% 10%;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - var(--altura-rodape));
+    gap: 40px;
+}
+
+.campotexto__entrada {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.campotexto__entrada__cabecalho {
+    height: 60px;
+    padding: 0% 0% 2% 0%;
+    align-self: flex-start;
+}
+
+#entradaTexto {
+    background-color: var(--cor-terciaria);
+    height: 80%;
+    border: none;
+    resize: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+}
+
+.campotexto__entrada__aviso {
+    color: var(--cor-primaria);
+    padding: 1% 0% 3% 0%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.campotexto__opcoes__entrada {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.botaoCriptografar {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    border: 1.5px solid var(--cor-primaria);
+    border-radius: 8px;
+    width: 50%;
+    padding: 2% 2%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.botaoDescriptografar {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    border: 1.5px solid var(--cor-primaria);
+    border-radius: 8px;
+    width: 50%;
+    padding: 2% 2%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.camposaida {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+    width: 30%;
+    background-color: var(--cor-terciaria);
+    height: calc(100vh - var(--altura-rodape)*2);
+}
+
+.saidaOrientacoes__textoPrincipal {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.saidaOrientacoes__textoSecundario {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#saidaImagem  {
+    width: 100%;
+    margin-top: 10%;
+}
+
+#saidaResultado {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#saidaTexto {
+    height: 90%;
+    text-transform: lowercase;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+.botaoCopiar {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    border: 1.5px solid var(--cor-primaria);
+    border-radius: 8px;
+    width: 100%;
+    height: 8%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    height: var(--altura-rodape);
+}
