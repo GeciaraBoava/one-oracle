@@ -2,8 +2,8 @@
 
 :root {
     --cor-primaria: #00215E;
-    --cor-secundaria: #dbdbdb;
-    --cor-terciaria: #aab3f6;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #ffeee3;
 
     --fonte-primaria: "Inter", sans-serif;
 
@@ -51,6 +51,11 @@ body {
     padding: 10px;
     font-size: 2rem;
     text-transform: lowercase;
+    overflow-y: auto;
+}
+
+#entradaTexto::-webkit-scrollbar {
+    width: 0px;
 }
 
 .campotexto__entrada__aviso {
@@ -70,7 +75,7 @@ body {
 
 .botaoCriptografar {
     background-color: var(--cor-primaria);
-    color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
     border: 1.5px solid var(--cor-primaria);
     border-radius: 24px;
     width: 50%;
@@ -80,7 +85,7 @@ body {
 }
 
 .botaoDescriptografar {
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
     border: 1.5px solid var(--cor-primaria);
     border-radius: 24px;
@@ -98,7 +103,7 @@ body {
     align-items: center;
     width: 30%;
     background-color: var(--cor-terciaria);
-    height: calc(100vh - var(--altura-rodape)-5%);
+    height: 100%;
 }
 
 .saidaOrientacoes__textoPrincipal {
@@ -121,22 +126,33 @@ body {
     height: 100%;
     width: 100%;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #saidaTexto {
-    height: 90%;
-    text-transform: lowercase;
-    word-break: break-all;
-    white-space: pre-wrap;
+    height: 80%;
 }
 
 .botaoCopiar {
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
     border: 1.5px solid var(--cor-primaria);
     border-radius: 24px;
     width: 100%;
-    height: 67px;
+    height: 47px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 5% 0% 5% 0%;
+
+}
+
+.botaoLimpar {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border: 1.5px solid var(--cor-primaria);
+    border-radius: 24px;
+    width: 100%;
+    height: 47px;
     font-size: 1rem;
     text-align: center;
 
@@ -154,7 +170,8 @@ body {
 @media (max-width: 768px) {
     
     .campotexto {
-        height: calc(100vh - altura-rodape);
+        height: auto;
+        min-height: calc(100vh - var(--altura-rodape));
         flex-direction: column;
         justify-content: center;
     }
@@ -165,8 +182,10 @@ body {
     }
 
     #entradaTexto {
-        padding: 0% 0% 5% 0%;
-    }
+        padding: 5%;
+        min-height: 100px;
+        height: auto;
+}
 
     .botaoCriptografar {
         width: 100%;
@@ -177,8 +196,10 @@ body {
     }
 
     .camposaida {
-        padding: 2%;
+        padding: 5%;
         width: 100%;
+        border-radius: 24px;
+        box-shadow: 10px 10px 5px rgba(122, 122, 122, 0.266);
     }
 
     #saidaImagem {

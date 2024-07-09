@@ -13,7 +13,7 @@
         <section class="campotexto">
             <div class="campotexto__entrada">
                 <img class="campotexto__entrada__cabecalho" src="./assets/logo.png" alt="logo da empresa">
-                <textarea type="text" id="entradaTexto" name="entrada" placeholder="Digite teu texto aqui."></textarea>
+                <textarea type="text" id="entradaTexto" name="entrada" placeholder="Digite teu texto aqui." required></textarea>
                 <a class="campotexto__entrada__aviso" >
                     <img src="./assets/exclamacao.png" alt="Exclamação" width="30px">
                     Apenas letras minúsculas e sem acento.
@@ -32,6 +32,7 @@
                 <div id="saidaResultado" style="display: none;">
                     <p id="saidaTexto"></p>
                     <button onclick="copiar()" class="botaoCopiar">Copiar</button>
+                    <button onclick="limpar()" class="botaoLimpar">Limpar</button>
                 </div>
             </div>
         </section>

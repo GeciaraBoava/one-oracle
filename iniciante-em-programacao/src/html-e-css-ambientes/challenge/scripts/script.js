@@ -47,3 +47,7 @@ function copiar() {
         alert("Erro ao copiar o texto: " + err);
     });
 }
+
+function limpar() {
+    location.reload();
+}
