@@ -98,7 +98,7 @@ body {
 .camposaida {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 2%;
     align-items: center;
     width: 30%;
@@ -110,14 +110,13 @@ body {
     font-size: 1.5rem;
     text-align: center;
 }
-
 .saidaOrientacoes__textoSecundario {
     font-size: 1rem;
     text-align: center;
 }
 
 #saidaImagem  {
-    width: 100%;
+    max-width: 100%;
     margin-top: 10%;
 }
 
@@ -131,6 +130,7 @@ body {
 
 #saidaTexto {
     height: 80%;
+    word-break: break-all;
 }
 
 .botaoCopiar {
