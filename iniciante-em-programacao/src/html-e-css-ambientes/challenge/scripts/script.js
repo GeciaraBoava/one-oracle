@@ -1,12 +1,12 @@
 
 function criptografar() {
-    var entradaTexto = document.getElementById("entradaTexto").value;
+    var entradaTexto = document.getElementById("entradaTexto").value.toLowerCase();
     var saidaTexto = document.getElementById("saidaTexto");
     var saidaOrientacoes = document.getElementById("saidaOrientacoes");
     var saidaResultado = document.getElementById("saidaResultado");
 
-    var criptografado = entradaTexto.replace(/[aeiou]/g, function(substituir) {
-        switch(substituir) {
+    var criptografado = entradaTexto.replace(/[aeiou]/g, function (substituir) {
+        switch (substituir) {
             case "a": return "ai";
             case "e": return "enter";
             case "i": return "imes";
@@ -16,7 +16,7 @@ function criptografar() {
     });
     saidaTexto.innerText = criptografado;
     saidaOrientacoes.style.display = "none";
-    saidaResultado.style.display= "block";
+    saidaResultado.style.display = "block";
 }
 
 function descriptografar() {
@@ -25,8 +25,8 @@ function descriptografar() {
     var saidaOrientacoes = document.getElementById("saidaOrientacoes");
     var saidaResultado = document.getElementById("saidaResultado");
 
-    var descriptografado = entradaTexto.replace(/ai|enter|imes|ober|ufat/g, function(substituir) {
-        switch(substituir) {
+    var descriptografado = entradaTexto.replace(/ai|enter|imes|ober|ufat/g, function (substituir) {
+        switch (substituir) {
             case "ai": return "a";
             case "enter": return "e";
             case "imes": return "i";
@@ -41,9 +41,9 @@ function descriptografar() {
 
 function copiar() {
     var saidaTexto = document.getElementById("saidaTexto").innerText;
-    navigator.clipboard.writeText(saidaTexto).then(function() {
+    navigator.clipboard.writeText(saidaTexto).then(function () {
         alert("Texto copiado para a área de transferência!");
-    }, function(err) {
+    }, function (err) {
         alert("Erro ao copiar o texto: " + err);
     });
 }
