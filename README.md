@@ -2,7 +2,8 @@
 By Oracle & Alura
 
 Projetos e desafios da segunda etapa do curso One Oracle Next Education.
-Nesta etapa foram aplicados conteúdos de lógica de programação, HTML, CSS e Figma, além da utilização da AI (ChatGPT) para otimização do desenvolvimento.
+Na primeira etapa (seleção) foram aplicados conteúdos de lógica de programação, HTML, CSS e Figma, além da utilização da AI (ChatGPT) para otimização do desenvolvimento.
+Já na etapa de especialização os cursos são voltados para desenvolvimento em Java, com orientação a objetos e utilização de IA.
 
 ## Linguagens e recursos utilizados
 
